@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: bronze_sales
+    columns:
+      - name: sales_id
+        tests:
+          - not_null
+          - unique
+
+  - name: bronze_store
+    columns:
+      - name: store_sk
+        tests:
+          - not_null
+          - unique
